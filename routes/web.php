@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//loads home page
 Route::get('/','App\Http\Controllers\HomeController@index');
+
+//submits date filter form
+Route::post('/date-filter-asteroids-data','App\Http\Controllers\HomeController@getAsteroidsData');

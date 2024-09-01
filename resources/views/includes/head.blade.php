@@ -11,5 +11,13 @@
 <!-- Bootstrap DatePicker CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- Ajax Loader -->
+<link rel="stylesheet" href="{{asset('css/ajax-loader.css')}}?version=1.2">
+
 <!-- CSS Customization -->
 <link rel="stylesheet" href="{{asset('css/custom.css')}}?version=1.2">
+
+<!-- This contains page heading -->
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">{{$heading}}</span>
+</nav>
