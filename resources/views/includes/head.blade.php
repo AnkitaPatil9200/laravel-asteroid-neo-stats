@@ -16,8 +16,3 @@
 
 <!-- CSS Customization -->
 <link rel="stylesheet" href="{{asset('css/custom.css')}}?version=1.2">
-
-<!-- This contains page heading -->
-<nav class="navbar navbar-dark bg-dark">
-  <span class="navbar-brand mb-0 h1">{{$heading}}</span>
-</nav>

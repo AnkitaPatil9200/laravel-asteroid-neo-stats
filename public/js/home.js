@@ -98,7 +98,7 @@ function loadNeoStatChart($x, $y) {
         data: {
             labels: $x,
             datasets: [{
-                label: 'Number of Asteroids',
+                label: 'Number of Asteroids passing near the Earth',
                 data: $y,
                 borderWidth: 1
             }]

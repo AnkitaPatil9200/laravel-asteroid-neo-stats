@@ -42,6 +42,6 @@
 
 <!-- Canvas to display chart -->
 <div>
-  <canvas id="neoStatChart"></canvas>
+  <canvas id="neoStatChart" width="50px"></canvas>
 </div>
 @endsection

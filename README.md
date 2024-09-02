@@ -1,4 +1,4 @@
-# ![Laravel Asteroid Neo Stats App](logo.png)
+# ![Laravel Asteroid Neo Stats App]
 
 # Getting started
 

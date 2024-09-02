@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         // load the home page
-        $pageType = 'Asteroids Data';
+        $pageType = 'Asteroids Data using NASA Neo Feed API';
         return view('pages.home', ['heading' => $pageType]);
     }
 

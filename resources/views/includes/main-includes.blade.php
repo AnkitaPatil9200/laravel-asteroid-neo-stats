@@ -8,12 +8,15 @@
 </head>
 
 <body>
+    <header>
+        @include('includes.header')
+    </header>
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <!-- Included file that contains main code -->
             @include('includes.main-content')
         </div>
-        <footer>
+        <footer class="text-muted">
             <!-- Included footer file -->
             @include('includes.footer')
         </footer>
