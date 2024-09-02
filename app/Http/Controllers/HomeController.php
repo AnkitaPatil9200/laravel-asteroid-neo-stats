@@ -17,7 +17,6 @@ class HomeController extends Controller
 
     public function getAsteroidsData(Request $request)
     {
-
         // date validation
         $validationResponse = Validator::make($request->all(), [
             'from' => 'required|date',
@@ -113,12 +112,5 @@ class HomeController extends Controller
                 ],
                 'message' => 'Data received successfully'
             ]);
-    }
-
-    public static function show($data)
-    {
-        echo '<pre>';
-        print_r($data);
-        echo '</pre>';
     }
 }

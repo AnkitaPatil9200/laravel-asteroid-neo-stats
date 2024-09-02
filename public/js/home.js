@@ -1,6 +1,6 @@
 // function that runs when DOM is ready
 $(document).ready(function () {
-    console.log('doc ready');
+
     // added datepicker
     $('.date').datepicker({
         format: 'dd-mm-yyyy'
@@ -30,11 +30,8 @@ $(document).ready(function () {
 
                 // clear alert message data
                 $('#ajax-alert-message').removeClass().text('');
-                console.log(response);
 
                 if (response.status) { // success response
-                    console.log('success');
-                    console.log(response.data);
 
                     // display success alert message
                     $('#ajax-alert-message').addClass('alert alert-success').text(response.message);
@@ -49,15 +46,9 @@ $(document).ready(function () {
                     $('#ca_distance').text('Distance : ' + response.data.closest_asteroid_data.distance + ' Km');
                     $('#ca_size').text('Average Size : ' + response.data.closest_asteroid_data.average_size + ' Km');
 
-                    // store chart data into variable
-                    var chartData = response.data.chart_data;
-                    console.log(chartData);
-
                     // load chart
                     loadNeoStatChart(response.data.chart_data.x_axis_data, response.data.chart_data.y_axis_data);
                 } else {
-                    console.log('error');
-
                     // display error alert message
                     $('#ajax-alert-message').addClass('alert alert-danger');
                     if (typeof (response.message) != "undefined" && response.message !== null) {
@@ -70,7 +61,6 @@ $(document).ready(function () {
             error: function (xhr) {
                 // remove ajax loader
                 $('.overlay-spinner').addClass('hide');
-                console.log(xhr);
 
                 // display error alert message
                 $('#ajax-alert-message').removeClass().addClass('alert alert-danger').text('Something went wrong.');
